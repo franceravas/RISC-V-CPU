@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1783058337" />
+    <testcase name="initial_read_test" classname="test_logic1" file="/Users/franceravas/Documents/GitHub/RISC-V-CPU/single_cycle_edition/tb/logic1/test_logic1.py" lineno="54" time="0.0005688667297363281" sim_time_ns="3.0" ratio_time="5273.642917015926">
+      <failure error_type="AssertionError" error_msg="assert 0 == 1&#10; +  where 0 = int(Logic('0'))&#10; +    where Logic('0') = LogicObject(logic1.data_out).value&#10; +      where LogicObject(logic1.data_out) = HierarchyObject(logic1).data_out" />
+    </testcase>
+  </testsuite>
+</testsuites>
