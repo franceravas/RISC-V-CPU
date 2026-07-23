@@ -1,38 +1,3 @@
-# # test_logic1.py
-
-# import cocotb
-# from cocotb.clock import Clock
-# from cocotb.triggers import RisingEdge, Timer
-# import random
-
-# @cocotb.coroutine
-# async def reset(dut):
-#     await RisingEdge(dut.clk)
-#     dut.reset_n.value = 0
-#     await RisingEdge(dut.clk)
-#     dut.reset_n.value = 1
-#     await Timer(1, units="ns")
-
-#     print("reset done !")
-
-#     assert dut.data_out.value == 0b0
-
-# @cocotb.test()
-# async def initial_read_test(dut):
-#     cocotb.start_soon(Clock(dut.clk, 1, units="ns").start())
-#     await RisingEdge(dut.clk)
-    
-#     # call the reset co-routine
-#     await reset(dut)
-
-#     # do some random tests
-#     N_TESTS = 1000
-#     for _ in range (N_TESTS):
-#       test_value = random.randint(0, 1)
-#       dut.data_in.value = test_value
-#       await RisingEdge(dut.clk)
-#       assert dut.data_out == test_value
-
 import cocotb
 from cocotb.clock import Clock
 from cocotb.triggers import RisingEdge, Timer

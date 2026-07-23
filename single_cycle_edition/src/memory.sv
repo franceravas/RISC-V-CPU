@@ -31,7 +31,7 @@ always @(posedge clk) begin
         // If not, we ignore the write
         if (address[1:0] == 2'b00) begin 
             //here, address[31:2] is the word index
-            mem[address[31:2]] <= write_data;
+            mem[address[7:2]] <= write_data;
         end
     end
 end
@@ -39,7 +39,7 @@ end
 // Read logic
 always_comb begin
     //here, address[31:2] is the word index
-    read_data = mem[address[31:2]]; 
+    read_data = mem[address[7:2]]; 
 end
 
 endmodule

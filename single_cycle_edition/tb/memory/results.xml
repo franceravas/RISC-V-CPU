@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1784837822" />
+    <testcase name="memory_data_test" classname="test_memory" file="/Users/franceravas/Documents/GitHub/RISC-V-CPU/single_cycle_edition/tb/memory/test_memory.py" lineno="8" time="0.0009598731994628906" sim_time_ns="77.0" ratio_time="80218.92896174864" />
+  </testsuite>
+</testsuites>
